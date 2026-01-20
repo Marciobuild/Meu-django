@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+
+{% block content %}
+    {% for post in posts %}
+        <h2>{{ post.titulo }}</h2>
+        <p>{{ post.conteudo }}</p>
+        <hr>
+    {% empty %}
+        <p>Nenhum post ainda.</p>
+    {% endfor %}
+{% endblock %}
+
+</body>
+</html>

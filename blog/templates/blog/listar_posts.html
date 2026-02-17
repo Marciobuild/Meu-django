@@ -8,15 +8,28 @@
 </head>
 <body>
 
-{% block content %}
-    {% for post in posts %}
-        <h2>{{ post.titulo }}</h2>
-        <p>{{ post.conteudo }}</p>
-        <hr>
-    {% empty %}
-        <p>Nenhum post ainda.</p>
-    {% endfor %}
-{% endblock %}
+    <header>
+        {% block header %}
+        <h1>Meu Blog</h1>
+        <p>Uma site simples para fazer posts.</p>
+        {% endblock %}
+    </header>
 
+    <main>
+        {% block content %}
+            {% for post in posts %}
+                <h2>{{ post.titulo }}</h2>
+                <p>{{ post.conteudo }}</p>
+                <hr>
+            {% empty %}
+                <p>Nenhum post ainda.</p>
+            {% endfor %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>contacto:941646410</p>
+        <p>Meu github:</p>
+        <p>mais informação <a href="https://github.com/Marciobuild" target="_blank">clique aqui</a></p>
+    </footer>
 </body>
 </html>

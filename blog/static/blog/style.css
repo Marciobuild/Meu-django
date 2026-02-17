@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: #989c93;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+}
+.post {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+footer {
+    background: #989c93;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+}
